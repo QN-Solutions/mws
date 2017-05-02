@@ -119,6 +119,10 @@ abstract class MarketplaceWebService_Model
                         $xml .= "<$fieldName>";
                         $xml .= $fieldValue->toXMLFragment();
                         $xml .= "</$fieldName>";
+                    } else if ($fieldType == "DateTime") {
+                        $xml .= "<$fieldName>";
+                        $xml .= $fieldValue->format(DateTime::ATOM);
+                        $xml .= "</$fieldName>";
                     } else {
                         $xml .= "<$fieldName>";
                         $xml .= $this->escapeXML($fieldValue);

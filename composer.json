@@ -1,5 +1,5 @@
 {
-  "name": "brickfox/mws",
+  "name": "qn/mws",
   "description": "Amazon Marketplace Web Service libraries",
   "minimum-stability": "dev",
   "license": "Apache-2.0",
@@ -9,6 +9,9 @@
   }, {
     "name": "Nikolas Hermann",
     "email": "nikolas.hermann@brickfox.de"
+  }, {
+    "name": "Christian Kuhn",
+    "email": "c.kuhn@qn-solutions.de"
   }],
   "include-path": ["src/"],
   "autoload": {
